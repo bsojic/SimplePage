@@ -1,0 +1,664 @@
+/* Importing all scss styles */
+/* Colors */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2 h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  word-break: break-word;
+}
+
+body {
+  color: #646464;
+  font-size: 15px;
+  line-height: 1.4em;
+  background-color: whitesmoke;
+  font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a {
+  font-family: Arial;
+  padding-bottom: 0.08em;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+del {
+  color: #333;
+}
+
+ins {
+  text-decoration: none;
+  background: #fff9c0;
+}
+
+hr {
+  height: 1px;
+  margin: 24px;
+  margin-bottom: 1.714285714rem;
+  border: 0;
+  background-color: #ccc;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+small {
+  font-size: smaller;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+}
+
+/* Clearing floats */
+.clear:after {
+  clear: both;
+}
+
+.clear:before,
+.clear:after {
+  display: table;
+  content: "";
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+header .logo {
+  background: url("../img/logo.png") no-repeat;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+header .nav-bar {
+  float: right;
+}
+header .nav .search-icon {
+  float: right;
+}
+header .nav #search-input {
+  display: none;
+  position: absolute;
+  width: 95%;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .nav #search-input input {
+  width: 100%;
+}
+header .nav .top-nav {
+  position: relative;
+  top: 17px;
+  float: right;
+}
+header .nav .top-nav a {
+  display: inline;
+  color: #757575;
+}
+header .nav .top-nav a.home:hover, header .nav .top-nav a.home:active, header .nav .top-nav a.home:focus {
+  color: #bbd447;
+}
+header .nav .top-nav a.about:hover, header .nav .top-nav a.about:active, header .nav .top-nav a.about:focus {
+  color: #81b36e;
+}
+header .nav .top-nav a.work:hover, header .nav .top-nav a.work:active, header .nav .top-nav a.work:focus {
+  color: #429099;
+}
+header .nav .top-nav a.contact:hover, header .nav .top-nav a.contact:active, header .nav .top-nav a.contact:focus {
+  color: #1375b8;
+}
+header .nav .top-nav .icon {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+}
+header .nav .top-nav .icon.home-pic {
+  background: url("../img/home.png") no-repeat;
+}
+header .nav .top-nav .icon.home-pic:hover, header .nav .top-nav .icon.home-pic:active, header .nav .top-nav .icon.home-pic:focus {
+  background: url("../img/home-hover.png") no-repeat;
+}
+header .nav .top-nav .icon.about-pic {
+  background: url("../img/about.png") no-repeat;
+}
+header .nav .top-nav .icon.about-pic:hover, header .nav .top-nav .icon.about-pic:active, header .nav .top-nav .icon.about-pic:focus {
+  background: url("../img/about-hover.png") no-repeat;
+}
+header .nav .top-nav .icon.work-pic {
+  background: url("../img/work.png") no-repeat;
+}
+header .nav .top-nav .icon.work-pic:hover, header .nav .top-nav .icon.work-pic:active, header .nav .top-nav .icon.work-pic:focus {
+  background: url("../img/work-hover.png") no-repeat;
+}
+header .nav .top-nav .icon.contact-pic {
+  background: url("../img/contact.png") no-repeat;
+}
+header .nav .top-nav .icon.contact-pic:hover, header .nav .top-nav .icon.contact-pic:active, header .nav .top-nav .icon.contact-pic:focus {
+  background: url("../img/contact-hover.png") no-repeat;
+}
+header .nav .mobile-navigation {
+  float: left;
+  width: 100%;
+}
+header .nav a {
+  color: #FFF;
+  padding: 2px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: block;
+}
+header .nav a.home-mobile {
+  background-color: #bbd447;
+  margin-bottom: 2px;
+}
+header .nav a.about-mobile {
+  background-color: #81b36e;
+  margin-bottom: 2px;
+}
+header .nav a.work-mobile {
+  background-color: #429099;
+  margin-bottom: 2px;
+}
+header .nav a.contact-mobile {
+  background-color: #1375b8;
+  margin-bottom: 2px;
+}
+header .nav a.icon {
+  float: right;
+}
+header .nav a i {
+  color: #757575;
+  font-size: 20px;
+  margin-top: 17px;
+}
+header .nav a i:hover, header .nav a i:active, header .nav a i:focus, header .nav a i:visited {
+  color: #bbd447;
+}
+header .nav #links {
+  display: none;
+}
+
+.border-header {
+  background: url("../img/border.png") repeat;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+}
+
+.wm-slider-section-mobile .swiper-container h2 {
+  position: relative;
+  text-align: center;
+}
+.wm-slider-section-mobile .swiper-container .swiper-button-next,
+.wm-slider-section-mobile .swiper-container .swiper-button-prev {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  margin-top: -10px;
+}
+
+.wm-slider-section-default .swiper-container h2 {
+  position: absolute;
+  top: 40%;
+  left: 46%;
+  margin: 0;
+  font-size: 24px;
+  font-family: Arial;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+.wm-slider-section-default .swiper-container .swiper-pagination-bullet-active {
+  background: #81b36e;
+}
+
+.swiper-container img {
+  width: 100%;
+}
+
+.container-mobile {
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+}
+.container-mobile h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.container-mobile .text {
+  font-size: 12px;
+  display: block;
+}
+.container-mobile a {
+  font-size: 10px;
+  padding: 2px 5px;
+}
+.container-mobile a.more {
+  background-color: #e9e9e9;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+.container-mobile a.more:hover, .container-mobile a.more:focus, .container-mobile a.more:active {
+  color: #FFF;
+  background-color: #bbd447;
+}
+
+.container {
+  margin: 0 auto;
+  display: block;
+  width: 400px;
+}
+.container h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.container .big-holder {
+  display: flex;
+  margin-bottom: 50px;
+}
+.container .big-holder .picture {
+  width: 40%;
+  display: inline-block;
+}
+.container .big-holder .picture.first-block {
+  margin-right: 50px;
+}
+.container .big-holder .description {
+  width: 40%;
+  display: inline-block;
+  margin-left: 50px;
+}
+.container .big-holder .description .text {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+.container .big-holder .description p {
+  font-size: 12px;
+}
+.container .big-holder .description a {
+  font-size: 10px;
+  padding: 2px 5px;
+}
+.container .big-holder .description a.more {
+  background-color: #e9e9e9;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+.container .big-holder .description a.more:hover, .container .big-holder .description a.more:focus, .container .big-holder .description a.more:active {
+  color: #FFF;
+  background-color: #bbd447;
+}
+
+.holder {
+  background-color: #e9e9e9;
+  height: 90px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .holder {
+    height: 100px;
+    margin-top: 0;
+  }
+}
+.holder .icon {
+  display: block;
+  width: 60px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.holder .icon.hat {
+  background: url("../img/hat.png") no-repeat;
+  position: relative;
+  top: 20px;
+}
+.holder .icon.hat:hover, .holder .icon.hat:focus, .holder .icon.hat:active, .holder .icon.hat:visited {
+  background: url("../img/hat-hoverr.png") no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .holder .icon.hat {
+    top: 26px;
+  }
+}
+.holder .icon.cool {
+  background: url("../img/cool.png") no-repeat;
+  position: relative;
+  top: 17px;
+  left: 10px;
+}
+.holder .icon.cool:hover, .holder .icon.cool:focus, .holder .icon.cool:active, .holder .icon.cool:visited {
+  background: url("../img/cool-hover.png") no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .holder .icon.cool {
+    top: 25px;
+  }
+}
+.holder .icon.cal {
+  background: url("../img/cal.png") no-repeat;
+  position: relative;
+  top: 23px;
+  left: 10px;
+}
+.holder .icon.cal:hover, .holder .icon.cal:focus, .holder .icon.cal:active, .holder .icon.cal:visited {
+  background: url("../img/cal-hover.png") no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .holder .icon.cal {
+    top: 27px;
+  }
+}
+.holder .icon.clock {
+  background: url("../img/clock.png") no-repeat;
+  position: relative;
+  top: 20px;
+  left: 7px;
+}
+.holder .icon.clock:hover, .holder .icon.clock:focus, .holder .icon.clock:active, .holder .icon.clock:visited {
+  background: url("../img/clock-hover.png") no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .holder .icon.clock {
+    top: 28px;
+  }
+}
+.holder .icon.cloud {
+  background: url("../img/cloud.png") no-repeat;
+  position: relative;
+  top: 24px;
+  left: 1px;
+}
+.holder .icon.cloud:hover, .holder .icon.cloud:focus, .holder .icon.cloud:active, .holder .icon.cloud:visited {
+  background: url("../img/cloud-hover.png") no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .holder .icon.cloud {
+    top: 28px;
+  }
+}
+.holder .icon.heart {
+  background: url("../img/heart.png") no-repeat;
+  position: relative;
+  top: 25px;
+  left: 4px;
+}
+.holder .icon.heart:hover, .holder .icon.heart:focus, .holder .icon.heart:active, .holder .icon.heart:visited {
+  background: url("../img/heart-hover.png") no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .holder .icon.heart {
+    top: 30px;
+  }
+}
+
+footer {
+  background-color: #dbdbdb;
+  margin-top: 40px;
+}
+footer .social-icons {
+  padding: 15px;
+  padding-top: 18px;
+}
+footer .social-icons a .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+footer .social-icons a .icon.facebook {
+  background: url("../img/face.png") no-repeat;
+  margin-right: 8px;
+}
+footer .social-icons a .icon.facebook:hover, footer .social-icons a .icon.facebook:focus, footer .social-icons a .icon.facebook:active, footer .social-icons a .icon.facebook:visited {
+  background: url("../img/face-hover.png") no-repeat;
+}
+footer .social-icons a .icon.twitter {
+  background: url("../img/twitter.png") no-repeat;
+  margin-right: 8px;
+}
+footer .social-icons a .icon.twitter:hover, footer .social-icons a .icon.twitter:focus, footer .social-icons a .icon.twitter:active, footer .social-icons a .icon.twitter:visited {
+  background: url("../img/twitter-hover.png") no-repeat;
+}
+footer .social-icons a .icon.message {
+  background: url("../img/message.png") no-repeat;
+}
+footer .social-icons a .icon.message:hover, footer .social-icons a .icon.message:focus, footer .social-icons a .icon.message:active, footer .social-icons a .icon.message:visited {
+  background: url("../img/message-hover.png") no-repeat;
+}
+footer .social-icons a .icon.top-icon {
+  background: url("../img/top.png") no-repeat;
+  float: right;
+}
+footer .social-icons a .icon.top-icon:hover, footer .social-icons a .icon.top-icon:focus, footer .social-icons a .icon.top-icon:active, footer .social-icons a .icon.top-icon:visited {
+  background: url("../img/top-hover.png") no-repeat;
+}
+
+.hidden-xs {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .hidden-xs {
+    display: block;
+  }
+}
+
+.visible-xs {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .visible-xs {
+    display: none;
+  }
+}
+
+.visible-sm {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .visible-sm {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .visible-sm {
+    display: none;
+  }
+}
+
+.visible-md {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .visible-md {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hidden-br {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
